@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [tomcat](tomcat.md)
-  \* [tomcat/tomcatxing-neng-ce-shi.md](/tomcat/tomcatxing-neng-ce-shi.md "tomcat性能压测")
+  * tomcat性能测试
 * [nginx](nginx.md)
   * [nginx基准测试](nginx/nginxji-zhun-ce-shi.md)
 * [性能测试](xing-neng-ce-shi.md)
