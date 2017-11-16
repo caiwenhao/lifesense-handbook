@@ -9,7 +9,6 @@ make
 make install
 /usr/local/nginx/sbin/nginx
 /usr/local/nginx/sbin/nginx -s reload
-
 ```
 
 ```
