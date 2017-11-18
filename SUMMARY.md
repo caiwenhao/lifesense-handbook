@@ -8,7 +8,5 @@
 * [性能测试](xing-neng-ce-shi.md)
   * [ab压测工具](abya-ce-gong-ju.md)
 * linux基础
-  * lsof
-
-
+  * [lsof](lsof.md)
 
