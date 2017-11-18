@@ -46,5 +46,79 @@ sshd 7703 root 3u IPv6 6499 TCP *:ssh (LISTEN)
 sshd 7892 root 3u IPv6 6757 TCP 10.10.1.5:ssh->192.168.1.5:49901 (ESTABLISHED)
 ```
 
+**使用-i 6仅获取IPv6流量**
+
+```bash
+lsof -i 6
+```
+
+**仅显示TCP连接（同理可获得UDP连接）**  
+你也可以通过在-i后提供对应的协议来仅仅显示TCP或者UDP连接信息。
+
+```bash
+# lsof -iTCP
+COMMAND PID USER FD TYPE DEVICE SIZE NODE NAME
+sshd 7703 root 3u IPv6 6499 TCP *:ssh (LISTEN)
+sshd 7892 root 3u IPv6 6757 TCP 10.10.1.5:ssh->192.168.1.5:49901 (ESTABLISHED)
+```
+
+**使用-i:port来显示与指定端口相关的网络信息**
+
+或者，你也可以通过端口搜索，这对于要找出什么阻止了另外一个应用绑定到指定端口实在是太棒了。
+
+```bash
+# lsof -i :22
+COMMAND PID USER FD TYPE DEVICE SIZE NODE NAME
+sshd 7703 root 3u IPv6 6499 TCP *:ssh (LISTEN)
+sshd 7892 root 3u IPv6 6757 TCP 10.10.1.5:ssh->192.168.1.5:49901 (ESTABLISHED)
+```
+
+**使用@host来显示指定到指定主机的连接**  
+这对于你在检查是否开放连接到网络中或互联网上某个指定主机的连接时十分有用。
+
+```bash
+# lsof -i@172.16.12.5
+sshd 7892 root 3u IPv6 6757 TCP 10.10.1.5:ssh->172.16.12.5:49901 (ESTABLISHED)
+```
+
+**使用@host:port显示基于主机与端口的连接**
+
+你也可以组合主机与端口的显示信息。
+
+```bash
+# lsof -i@172.16.12.5:22
+sshd 7892 root 3u IPv6 6757 TCP 10.10.1.5:ssh->172.16.12.5:49901 (ESTABLISHED)
+```
+
+**找出监听端口**
+
+找出正等候连接的端口。
+
+```bash
+# lsof -i -sTCP:LISTEN
+```
+
+你也可以grep “LISTEN”来完成该任务。
+
+```bash
+# lsof -i | grep -i LISTEN
+iTunes 400 daniel 16u IPv4 0x4575228 0t0 TCP *:daap (LISTEN)
+```
+
+**找出已建立的连接**
+
+你也可以显示任何已经连接的连接。
+
+```bash
+# lsof -i -sTCP:ESTABLISHED
+```
+
+你也可以通过grep搜索“ESTABLISHED”来完成该任务。
+
+```bash
+# lsof -i | grep -i ESTABLISHED
+firefox-b 169 daniel 49u IPv4 0t0 TCP 1.2.3.3:1863->1.2.3.4:http (ESTABLISHED)
+```
+
 
 
