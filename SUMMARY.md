@@ -10,4 +10,9 @@
   * [ab压测工具](abya-ce-gong-ju.md)
 * linux基础
   * [lsof](lsof.md)
+* jenkins
+  * jenkins部署
+  * jenkins分步构建
+
+
 
