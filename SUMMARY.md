@@ -15,4 +15,8 @@
   * [jenkins分步构建](jenkinsfen-bu-gou-jian.md)
 * openshift
   * [openshift部署](openshiftbu-shu.md)
+* kubernetes
+  * k8s常用命令
+
+
 

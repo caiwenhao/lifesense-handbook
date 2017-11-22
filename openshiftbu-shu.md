@@ -2,9 +2,7 @@
 
 ## github开源项目使用最佳实践
 
-> 参考 https://github.com/caiwenhao/kubespray/blob/master/docs/integration.md
-
-
+> 参考 [https://github.com/caiwenhao/kubespray/blob/master/docs/integration.md](https://github.com/caiwenhao/kubespray/blob/master/docs/integration.md)
 
 环境准备:
 
@@ -23,7 +21,7 @@ git checkout -b lifesense origin/lifesense
 ansible_ssh_user=lifesense
 ```
 
-### 2.  修改版本为3.6 
+### 2.  修改版本为3.6
 
 ```
 openshift_release=v3.6
@@ -101,11 +99,7 @@ yum install java-1.8.0-openjdk-headless
 
 ### 9. 所有节点自动规范hostsname配置 预计写入到hosts配置文件
 
-
-
 ### 10. 修改etcd\_conf\_dir 为/data/etcd
-
-
 
 创建管理员帐号
 
@@ -114,7 +108,7 @@ htpasswd -B /etc/origin/master/htpasswd admin
 oadm policy add-cluster-role-to-user cluster-admin admin
 ```
 
-失败回滚 
+失败回滚
 
 ```
 ansible-playbook ~/openshift- ansible/playbooks/adhoc/uninstall.yml
@@ -128,8 +122,6 @@ oc status
 oc get node
 oc get pod
 ```
-
-
 
 
 
