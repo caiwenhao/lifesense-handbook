@@ -14,7 +14,5 @@
   * jenkins部署
   * [jenkins分步构建](jenkinsfen-bu-gou-jian.md)
 * openshift
-  * openshift部署
-
-
+  * [openshift部署](openshiftbu-shu.md)
 
