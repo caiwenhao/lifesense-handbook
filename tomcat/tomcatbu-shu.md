@@ -1,6 +1,6 @@
 # tomcat部署
 
-参考  https://github.com/judasn/Linux-Tutorial/blob/master/Tomcat-Install-And-Settings.md
+参考  [https://github.com/judasn/Linux-Tutorial/blob/master/Tomcat-Install-And-Settings.md](https://github.com/judasn/Linux-Tutorial/blob/master/Tomcat-Install-And-Settings.md)
 
 ### 支持apr
 
@@ -83,9 +83,9 @@ dubbo-support-*.jar,\
 ehcache-core-*.jar,\
 ```
 
- 解决"At least one JAR was scanned for TLDs yet contained no TLDs"问题
+解决"At least one JAR was scanned for TLDs yet contained no TLDs"问题
 
- http://mov-webhobo.iteye.com/blog/1939655
+[http://mov-webhobo.iteye.com/blog/1939655](http://mov-webhobo.iteye.com/blog/1939655)
 
 ### 容器化部署
 
@@ -121,7 +121,7 @@ RUN wget -q -O /tmp/jce_policy.zip --no-cookies --header "Cookie: oraclelicense=
 ENV PATH=${JAVA_HOME}/bin:$PATH
 ```
 
-构建脚本 https://github.com/caiwenhao/image/tree/master/tomcat/lifesense-v1
+构建脚本 [https://github.com/caiwenhao/image/tree/master/tomcat/lifesense-v1](https://github.com/caiwenhao/image/tree/master/tomcat/lifesense-v1)
 
 验证:
 
@@ -138,8 +138,12 @@ COPY sport-rest/target/sport-rest /opt/tomcat/webapps/ROOT
 ```
 cd /data/jenkins_home_new/workspace/docker_build
 docker build -t sport:1 --no-cache=true --pull=true --file=../sport/Dockerfile_rest_sport-services ../sport
-docker run -e DISCONF_ENV=online -ti sport:1 /bin/bash 
+docker run -e DISCONF_ENV=online -ti sport:1 /bin/bash
 ```
+
+### jvm调优参考
+
+http://www.cnblogs.com/markjiao/p/5368682.html
 
 
 
