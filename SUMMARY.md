@@ -16,7 +16,8 @@
 * openshift
   * [openshift部署](openshiftbu-shu.md)
 * kubernetes
-  * k8s常用命令
+  * [k8s常用命令](k8schang-yong-ming-ling.md)
+  * gluster-kubernetes
 
 
 
