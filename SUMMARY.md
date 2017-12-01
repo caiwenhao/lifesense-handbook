@@ -18,7 +18,5 @@
 * kubernetes
   * [k8s常用命令](k8schang-yong-ming-ling.md)
   * [gluster-kubernetes](gluster-kubernetes.md)
-  * 天河2号部署
-
-
+  * [天河2号部署](tian-he-2-hao-bu-shu.md)
 
