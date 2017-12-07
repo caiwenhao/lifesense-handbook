@@ -10,7 +10,7 @@
   * [ab压测工具](abya-ce-gong-ju.md)
 * linux基础
   * [lsof](lsof.md)
-  * rinetd
+  * [rinetd](rinetd.md)
 * jenkins
   * jenkins部署
   * [jenkins分步构建](jenkinsfen-bu-gou-jian.md)
@@ -20,6 +20,4 @@
   * [k8s常用命令](k8schang-yong-ming-ling.md)
   * [gluster-kubernetes](gluster-kubernetes.md)
   * [天河2号部署](tian-he-2-hao-bu-shu.md)
-
-
 
