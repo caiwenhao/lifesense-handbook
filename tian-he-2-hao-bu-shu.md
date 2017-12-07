@@ -14,5 +14,11 @@ helm install lifesense --namespace=lifesense-th2 --set configmap.DISCONF_HOST=kn
 helm install kafka/ --namespace=lifesense-th2 --set storageClass=gluster-heketi --set zookeeper.storageClass=gluster-heketi
 ```
 
+### 配置端口映射
+
+```
+
+```
+
 
 
