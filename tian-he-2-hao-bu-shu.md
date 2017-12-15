@@ -38,5 +38,15 @@ kubectl patch serviceaccounts default -p '{"imagePullSecrets":[{"name":"lifesens
 kubectl describe sa default -n lifesense-th2
 ```
 
+### redis集群部署
+
+> 参考redis 集群部署文档
+
+### mysql部署
+
+```
+ helm install stable/mysql --namespace=lifesense-th2 --set mysqlRootPassword=lifesense --set storageClass=gluster-heketi 
+```
+
 
 
