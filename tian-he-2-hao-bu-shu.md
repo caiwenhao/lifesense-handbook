@@ -33,7 +33,7 @@ helm install kafka/ --namespace=lifesense-th2 --set storageClass=gluster-heketi 
 ### 镜像仓库处理
 
 ```
-kubectl create secret docker-registry lifesense-registry-key --docker-server=registry.lifesense.com --docker-username=dockerhub --docker-password='cg$a~<Bzo9*)wYzX' --docker-email=xiaojian.guan@lifesense.com  -n lifesense-th2  
+kubectl create secret docker-registry lifesense-registry-key --docker-server=registry.lifesense.com --docker-username=dockerhub --docker-password='xxxx' --docker-email=xiaojian.guan@lifesense.com  -n lifesense-th2  
 kubectl patch serviceaccounts default -p '{"imagePullSecrets":[{"name":"lifesense-registry-key"}]}' -n lifesense-th2 
 kubectl describe sa default -n lifesense-th2
 ```
