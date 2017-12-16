@@ -14,9 +14,9 @@
 * jenkins
   * jenkins部署
   * [jenkins分步构建](jenkinsfen-bu-gou-jian.md)
-* openshift
+* [openshift](openshift.md)
   * [openshift部署](openshiftbu-shu.md)
-* kubernetes
+* [kubernetes](kubernetes.md)
   * [k8s常用命令](k8schang-yong-ming-ling.md)
   * [gluster-kubernetes](gluster-kubernetes.md)
   * [天河2号部署](tian-he-2-hao-bu-shu.md)
